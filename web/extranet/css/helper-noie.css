@@ -1,0 +1,43 @@
+/* Custom Radio/Checkbox */
+.cr-styled {
+    display: inline-block;
+    margin: 0px 2px;
+    line-height: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.cr-styled i {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 2px solid #CCC;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 1px;
+    font-family: 'FontAwesome';
+    margin-top: -4px;
+    margin-right: 3px;
+    font-size: 12px;
+}
+.cr-styled input {
+    visibility: hidden;
+    display: none;
+}
+.cr-styled input[type=checkbox]:checked + i:before {
+    content: "\f00c";
+}
+.cr-styled input[type=radio] + i {
+    border-radius: 18px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.cr-styled input[type=radio]:checked + i:before {
+    content: "\f111";
+}
+.cr-styled input:checked + i {
+    border-color: #6e8cd7;
+    color: #6e8cd7;
+}

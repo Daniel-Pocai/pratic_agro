@@ -1,0 +1,36 @@
+
+/* PARA USAR O PLUGIN BASTA ADICIONAR CLASSE crop-config NA IMAGEM*/
+<img class="img-responsive crop-config" src="<?php echo Yii::app()->createAbsoluteUrl('thumbnail/crop/1525x700/Evento/'.$model->foto);?>"/>
+
+
+/* EXEMPLO USADO NA ESTRUTURA COM AJUSTE DE LAYOUT E ETC...*/
+<div class="row">
+  <div class="col-md-12">
+    <?=Util::formataTexto($model->getAttributeLabel('foto'));?></dt>
+  </div>
+  <div class="col-md-4">
+  Original
+    <div class="grid-container">
+        <img src="<?php echo Yii::app()->createAbsoluteUrl('thumbnail/fill/250/Evento/'.$model->foto);?>"/>                 	</div>
+  </div>
+  <div class="col-md-4">
+    Listagem (510x380)
+    <div class="grid-container">
+        <div class="crop-mask">
+            <span class="text center-block"><i class="fa fa-crop fa-2x"></i><br>Clique para editar a área de corte</span>
+            <img class="img-responsive crop-config" src="<?php echo Yii::app()->createAbsoluteUrl('thumbnail/crop/510x380/Evento/'.$model->foto);?>"/>
+
+        </div>
+    </div>
+
+  </div>
+  <div class="col-md-4">
+    Interna (1525x700)
+    <div class="grid-container">
+        <div class="crop-mask">
+            <span class="text center-block"><i class="fa fa-crop fa-2x"></i><br>Clique para editar a área de corte</span>
+            <img class="img-responsive crop-config" src="<?php echo Yii::app()->createAbsoluteUrl('thumbnail/crop/1525x700/Evento/'.$model->foto);?>"/>
+        </div>
+    </div>
+  </div>
+</div>

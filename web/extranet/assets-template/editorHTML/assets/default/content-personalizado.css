@@ -1,0 +1,18 @@
+.contatos h2 {
+    font-size: 22px;
+    text-align: right
+}
+
+.contatos .separador {
+    font-size: 140px
+}
+
+.contatos .infos {
+    font-size: 20px;
+    margin-left: 30px
+}
+
+.drag-drop-editor-template .medio{
+    width: 50%;
+    float: left;
+}
