@@ -1,0 +1,29 @@
+{
+    "hash": "5c67431c33b2d6d82bfbf5a64b0e5862",
+    "packages": [],
+    "packages-dev": [],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "content-hash": "d6f234c8dc7076829f5e2a29cbbbe473",
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        }
+    },
+    "autoload": {
+        "classmap": [],
+        "files": [],
+        "psr-4": {},
+        "exclude-from-classmap": []
+    },
+    "require": {
+        "php": "^7.4",
+        "yiisoft/yii": "^1.1"
+    },
+    "require-dev": {},
+    "extra": {
+        "heroku": {
+            "buildpack": "heroku/php"
+        }
+    }
+}
