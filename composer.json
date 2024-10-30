@@ -1,13 +1,15 @@
 {
-    "name": "daniel-pocai/pratic-agro",
-    "description": "Aplicação PHP usando Yii no Heroku",
-    "require": {
+  "name": "daniel-pocai/pratic-agro",
+  "description": "Aplicação PHP usando Yii no Heroku",
+  "require": {
       "php": "^7.4",
       "yiisoft/yii": "^1.1"
-    },
-    "scripts": {
+  },
+  "scripts": {
       "post-install-cmd": [
-        "chmod -R 755 web/extranet"
+          "chmod -R 755 web/extranet"
       ]
-    }
-  }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
